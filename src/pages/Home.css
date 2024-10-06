@@ -1,0 +1,94 @@
+/* Home Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Gradient Background */
+.home-section {
+    padding: 40px 20px; /* Top/bottom padding */
+    text-align: center; /* Center align text */
+    background: linear-gradient(135deg, #e0f7fa 30%, #80deea 100%); /* Soft blue gradient */
+}
+
+.intro-container {
+    margin-bottom: 40px; /* Space below intro */
+    animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.home-title {
+    font-size: 3.5rem; /* Large title font size */
+    font-weight: bold; /* Bold font weight */
+    color: #00695c; /* Darker teal color for title */
+}
+
+.home-subtitle {
+    font-size: 1.5rem; /* Subtitle font size */
+    color: #004d40; /* Slightly darker teal color */
+}
+
+/* Features Section */
+.features-section {
+    margin-top: 40px; /* Top margin for spacing */
+}
+
+.features-title {
+    font-size: 2.5rem; /* Features title font size */
+    color: #00796b; /* Green color for features title */
+    margin-bottom: 20px; /* Bottom margin for spacing */
+}
+
+/* Features List Styling */
+.features-list {
+    list-style-type: none; /* Remove default list styling */
+    padding-left: 0; /* Remove left padding */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.feature-item {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 15px;
+    width: calc(30% - 30px); /* Responsive width with margins accounted for */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition effects */
+}
+
+.feature-item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-title {
+        font-size: 2.5rem; /* Smaller title on mobile */
+    }
+
+    .home-subtitle {
+        font-size: 1.25rem; /* Smaller subtitle on mobile */
+    }
+
+    .features-title {
+        font-size: 2rem; /* Smaller features title on mobile */
+    }
+
+    .feature-item {
+        width: calc(45% - 30px); /* Adjust width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .feature-item {
+        width: calc(100% - 30px); /* Full width on very small screens */
+    }
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+   from { opacity: 0; }
+   to { opacity: 1; }
+}
